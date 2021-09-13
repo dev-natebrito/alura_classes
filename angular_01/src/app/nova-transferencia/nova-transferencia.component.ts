@@ -25,7 +25,7 @@ export class NovaTransferenciaComponent {
   }
 
   private ehValido() {
-    const valido = this.valor > 0 && this.destino > 0;
+    const valido = this.valor > 0;
     if (!valido) {
       this.valoresComErro.emit('Informe um valor e um destino válido');
     }
